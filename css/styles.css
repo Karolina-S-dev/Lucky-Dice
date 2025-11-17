@@ -170,7 +170,8 @@ nav img {
     /*---DIV prop.*/
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 5rem 38rem;
+    max-width: 100rem;
+    margin: 5rem auto;
 }
 
 .pricelist-card {
