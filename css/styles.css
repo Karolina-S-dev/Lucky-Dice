@@ -388,3 +388,91 @@ nav img {
 .contact-us-card button {
     margin-top: 2rem;
 }
+
+/* ----------------------- */
+/* FOOTER */
+/* ----------------------- */
+
+footer {
+    padding: 8rem 15rem 4rem 15rem;
+}
+
+.footer-top {
+    padding: 0 0 4rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30rem;
+    align-items: center;
+}
+
+.footer-brand-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 60rem;
+    gap: 2rem;
+}
+
+.footer-brand-row img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+
+.footer-brand-info-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-brand-info-col h4 {
+    font-size: 5rem;
+}
+
+.footer-brand-info-col p {
+    font-size: 1.5rem;
+}
+
+.footer-links-col {
+    max-width: 50rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer-links-col a {
+    font-size: 2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    }
+
+.footer-links-col ion-icon{
+    font-size: 2.5rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    }
+
+.footer-item a {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    }
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding-top: 2rem;
+}
+
+.footer-bottom p, a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
