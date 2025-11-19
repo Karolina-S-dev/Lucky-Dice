@@ -296,22 +296,31 @@ nav img {
 /* CONTACT US */
 /* --------------------------- */
 
-.contact-us {
+.branches-title {
     color: #FF706A;
     font-size: 3.5rem;
     font-weight: 700;
-    margin: 7rem 0 7rem 18rem;
+    position: absolute;
+    top: -12rem;
+    left: 50%;
+    max-width: 10rem;
+    white-space: nowrap;
+}
+.contact-us-card-1{
+    position: relative;
 }
 
 .contact-us-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 20rem auto 4rem auto;
+    max-width: 150rem;
 }
 
-.contact-us-card {
+.contact-us-card-1, .contact-us-card-2{
     display: flex;
-    flex: 0 0 calc(38% - 1rem);
+    flex: 0 0 calc(45% - 1rem);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -321,7 +330,6 @@ nav img {
     color: #FF706A;
     border-radius: 25px;
     padding: 6rem 5rem;
-    margin-bottom: 8rem;
 }
 
 .form {
@@ -387,4 +395,92 @@ nav img {
 
 .contact-us-card button {
     margin-top: 2rem;
+}
+
+/* ----------------------- */
+/* FOOTER */
+/* ----------------------- */
+
+footer {
+    padding: 7rem 3rem;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: 120rem;
+}
+
+.footer-brand-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.footer-brand-row img {
+    max-width: 14rem;
+    max-height: 14rem;
+    border-radius: 50%;
+}
+
+.footer-brand-info-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+
+.footer-brand-info-col h4 {
+    font-size: 4.5rem;
+}
+
+.footer-brand-info-col p {
+    font-size: 1.5rem;
+}
+
+.footer-links-col {
+    max-width: 50rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer-links-col a {
+    font-size: 2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    }
+
+.footer-links-col ion-icon{
+    font-size: 2.5rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    }
+
+.footer-item a {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    }
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding-top: 2rem;
+}
+
+.footer-bottom p, a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
 }

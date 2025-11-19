@@ -6,7 +6,9 @@
 
 /* tablets 768px - 1023px */
 @media only screen and (max-width: 1023px) {
-    html, body {
+
+    html,
+    body {
         font-size: 9px;
     }
 
@@ -15,7 +17,36 @@
     }
 
     .nav-links {
-        gap: 4rem
+        gap: 4rem;
+    }
+
+    /* KAROLINA */
+    section {
+        padding: 2rem 3rem;
+    }
+
+    .contact-us-row {
+        margin: 17rem auto 4rem auto;
+    }
+
+    .footer-brand-info-col h4 {
+        font-size: 3.5rem;
+    }
+
+    .branches-title {
+        font-size: 3rem;
+    }
+
+    .contact-us-card-1 {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 2rem 3rem;
+    }
+
+    .footer-links-col a {
+        font-size: 1.5em;
     }
 
 }
