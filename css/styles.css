@@ -296,22 +296,31 @@ nav img {
 /* CONTACT US */
 /* --------------------------- */
 
-.contact-us {
+.branches-title {
     color: #FF706A;
     font-size: 3.5rem;
     font-weight: 700;
-    margin: 7rem 0 7rem 18rem;
+    position: absolute;
+    top: -12rem;
+    left: 50%;
+    max-width: 10rem;
+    white-space: nowrap;
+}
+.contact-us-card-1{
+    position: relative;
 }
 
 .contact-us-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 20rem auto 4rem auto;
+    max-width: 150rem;
 }
 
-.contact-us-card {
+.contact-us-card-1, .contact-us-card-2{
     display: flex;
-    flex: 0 0 calc(38% - 1rem);
+    flex: 0 0 calc(45% - 1rem);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -321,7 +330,6 @@ nav img {
     color: #FF706A;
     border-radius: 25px;
     padding: 6rem 5rem;
-    margin-bottom: 8rem;
 }
 
 .form {
@@ -394,37 +402,37 @@ nav img {
 /* ----------------------- */
 
 footer {
-    padding: 8rem 15rem 4rem 15rem;
+    padding: 7rem 3rem;
 }
 
 .footer-top {
-    padding: 0 0 4rem 0;
     display: flex;
     flex-direction: row;
-    gap: 30rem;
-    align-items: center;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: 120rem;
 }
 
 .footer-brand-row {
     display: flex;
     flex-direction: row;
-    max-width: 60rem;
     gap: 2rem;
 }
 
 .footer-brand-row img {
-    width: 18rem;
-    height: 18rem;
+    max-width: 14rem;
+    max-height: 14rem;
     border-radius: 50%;
 }
 
 .footer-brand-info-col {
     display: flex;
     flex-direction: column;
+    max-width: 30rem;
 }
 
 .footer-brand-info-col h4 {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 .footer-brand-info-col p {
