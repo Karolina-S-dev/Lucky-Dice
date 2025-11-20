@@ -133,6 +133,10 @@ nav {
     margin-top: 0;
 }
 
+nav ion-icon[name="reorder-three"] {
+    display: none;
+}
+
 nav img {
     width: 12rem;
     border-radius: 50%;
@@ -171,7 +175,7 @@ nav img {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100rem;
-    margin: 5rem auto;
+    margin: 2.5rem auto 0 auto;
 }
 
 .pricelist-card {
@@ -183,6 +187,9 @@ nav img {
     /*---DIV prop.*/
     margin: 2.5rem;
     flex: 1 0 calc(35% - 2.5rem);
+}
+.pricelist-card:last-child {
+    margin-bottom: 0;
 }
 
 .pricelist-card-premium-features {
