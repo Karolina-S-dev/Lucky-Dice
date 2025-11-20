@@ -21,9 +21,6 @@
     }
 
     /* KAROLINA */
-    section {
-        padding: 2rem 3rem;
-    }
 
     .contact-us-row {
         margin: 17rem auto 4rem auto;
@@ -41,6 +38,12 @@
         font-size: 3rem;
     }
 
+    .contact-us-card-1,
+    .contact-us-card-2 {
+        padding: 4rem 3rem;
+    }
+
+
     footer {
         padding: 2rem 3rem;
     }
@@ -48,7 +51,37 @@
     .footer-links-col a {
         font-size: 1.5em;
     }
+}
+/* mobile - phones */
+@media only screen and (max-width: 767px) {
 
+    section {
+        padding: 4rem 3rem;
+    }
+
+    html,
+    body {
+        font-size: 7px;
+    }
+
+    .contact-us-card-1,
+    .contact-us-card-2 {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .branches-title {
+        top: -8rem;
+    }
+
+    .contact-us-row {
+        margin: 10rem auto 0 auto;
+    }
+
+footer {
+    padding: 4rem 3rem;
 }
 
-@media only screen and (max-width: 767px) {}
+.footer-top {
+    margin: 1rem auto 2rem auto;
+}
+}
