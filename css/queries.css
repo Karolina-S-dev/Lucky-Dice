@@ -113,6 +113,10 @@
     .footer-top {
         margin: 1rem auto 2rem auto;
     }
+
+    .footer-links-col{
+        margin-left: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
