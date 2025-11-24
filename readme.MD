@@ -50,4 +50,4 @@ I’m learning front-end development and building small projects to improve my s
 ---
 
 📁 *Project created for educational purposes.*
-# Name-website
+# Lucky Dice
