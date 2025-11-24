@@ -89,6 +89,14 @@
         padding: 1.5rem 2rem;
     }
 
+    .hero-text {
+        margin-left: 3rem;
+    }
+
+    .pricelist-card-premium-features {
+        gap: 5rem;
+    }
+
     .contact-us-card-1,
     .contact-us-card-2 {
         padding: 1.5rem 2.5rem;
@@ -111,12 +119,16 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+
+    .contact-us-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 /* small mobile - phones*/
 @media only screen and (max-width: 400px) {
-
-    .hero-text {
-        margin-left: 3rem;
-    }
 
     .pricelist-card-premium-features {
         gap: 5rem;
