@@ -136,6 +136,11 @@ nav img {
     border-radius: 50%;
 }
 
+nav ion-icon[name="reorder-three"] {
+    display: none;
+    cursor: pointer;
+}
+
 .nav-links {
     display: flex;
     gap: 5rem;
@@ -169,7 +174,7 @@ nav img {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100rem;
-    gap:5rem;
+    gap: 5rem;
     margin: 5rem auto 0 auto;
 }
 
@@ -309,7 +314,8 @@ nav img {
     transform: translateX(-50%);
     white-space: nowrap;
 }
-.contact-us-card-1{
+
+.contact-us-card-1 {
     position: relative;
 }
 
@@ -321,7 +327,8 @@ nav img {
     max-width: 150rem;
 }
 
-.contact-us-card-1, .contact-us-card-2{
+.contact-us-card-1,
+.contact-us-card-2 {
     display: flex;
     flex: 0 0 calc(45% - 1rem);
     flex-direction: column;
@@ -455,9 +462,9 @@ footer {
     line-height: 1;
     display: flex;
     align-items: center;
-    }
+}
 
-.footer-links-col ion-icon{
+.footer-links-col ion-icon {
     font-size: 2.5rem;
 }
 
@@ -466,13 +473,13 @@ footer {
     flex-direction: row;
     gap: 0.8rem;
     align-items: center;
-    }
+}
 
 .footer-item a {
     display: flex;
     align-items: center;
     line-height: 1;
-    }
+}
 
 .footer-bottom {
     display: flex;
@@ -482,7 +489,8 @@ footer {
     padding-top: 2rem;
 }
 
-.footer-bottom p, a {
+.footer-bottom p,
+a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
