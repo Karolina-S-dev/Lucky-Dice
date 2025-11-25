@@ -136,11 +136,6 @@ nav img {
     border-radius: 50%;
 }
 
-nav ion-icon[name="reorder-three"] {
-    display: none;
-    cursor: pointer;
-}
-
 .nav-links {
     display: flex;
     gap: 5rem;
@@ -162,6 +157,11 @@ nav ion-icon[name="reorder-three"] {
 .nav-links a:hover {
     color: #ff706a;
     border-bottom: 1px solid #ff706a;
+}
+
+nav ion-icon[name="reorder-three"] {
+    display: none;
+    cursor: pointer;
 }
 
 /* --------------------------- */
@@ -189,20 +189,16 @@ nav ion-icon[name="reorder-three"] {
     flex: 1 0 calc(35% - 2.5rem);
 }
 
-.pricelist-card:last-child {
-    margin-bottom: 0;
-}
-
 .pricelist-card-premium-features {
     display: flex;
     flex-direction: row;
-    gap: 10.5rem;
+    justify-content: space-between;
+    max-width: 83rem;
     margin-bottom: 2rem;
 }
 
-.card-col {
-    display: flex;
-    flex-direction: column;
+.pricelist-card:last-child {
+    margin-bottom: 0;
 }
 
 .pricelist-card h3 {
@@ -211,6 +207,11 @@ nav ion-icon[name="reorder-three"] {
     font-size: 2rem;
     color: #666699;
     margin-bottom: 2rem;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
 }
 
 /* POP-UP-WINDOW*/
@@ -282,18 +283,18 @@ nav ion-icon[name="reorder-three"] {
     width: 20rem;
 }
 
-.card-footer p {
-    color: #FF706A;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
 .card-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: auto;
     align-items: center;
+}
+
+.card-footer p {
+    color: #FF706A;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .card-feature ion-icon {
@@ -315,16 +316,16 @@ nav ion-icon[name="reorder-three"] {
     white-space: nowrap;
 }
 
-.contact-us-card-1 {
-    position: relative;
-}
-
 .contact-us-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 20rem auto 4rem auto;
     max-width: 150rem;
+}
+
+.contact-us-card-1 {
+    position: relative;
 }
 
 .contact-us-card-1,
@@ -401,9 +402,6 @@ nav ion-icon[name="reorder-three"] {
 .button-container {
     display: flex;
     justify-content: end;
-}
-
-.contact-us-card button {
     margin-top: 2rem;
 }
 
@@ -465,15 +463,15 @@ footer {
     align-items: center;
 }
 
-.footer-links-col ion-icon {
-    font-size: 2.5rem;
-}
-
 .footer-item {
     display: flex;
     flex-direction: row;
     gap: 0.8rem;
     align-items: center;
+}
+
+.footer-item ion-icon {
+    font-size: 2.5rem;
 }
 
 .footer-item a {
