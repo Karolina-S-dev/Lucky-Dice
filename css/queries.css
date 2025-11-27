@@ -37,15 +37,24 @@
     }
 
     footer {
-        padding: 2rem 3rem;
+        padding: 4rem 3rem;
     }
 
-    .footer-brand-info-col h4 {
+    h4 {
         font-size: 3.5rem;
     }
 
     .footer-links-col a {
-        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+
+    .footer-contact-col {
+        margin-left: 3rem;
+    }
+
+    .footer-brand-row img {
+        max-width: 11rem;
+        max-height: 11rem;
     }
 }
 
@@ -103,23 +112,57 @@
     }
 
     footer {
-        padding: 4rem 3rem;
+        padding: 3rem 3rem;
     }
 
     .footer-top {
-        margin: 1rem auto 2rem auto;
+        margin: 1rem auto 4rem auto;
     }
 
-    .footer-links-col {
-        margin-left: 2.5rem;
+    h4 {
+        font-size: 2rem;
     }
 }
-/* solving a problem of gap disappearing in contact us section */
+
+@media only screen and (max-width: 500px) {
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-brand-info-col {
+        max-width: 100%;
+    }
+
+    .footer-menu-contact-row {
+        margin: 2rem auto 0 auto;
+    }
+}
+
+/* solving a problem of gap disappearing in contact us section, footer adjustment */
 @media only screen and (max-width: 450px) {
 
     .contact-us-row {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-links-col {
+        text-align: left;
+        gap: 1.3rem;
+    }
+
+    .footer-brand-row img {
+        max-width: 11rem;
+        max-height: 11rem;
+    }
+
+    .footer-brand-info-col {
+        max-width: 40rem;
     }
 }
 
@@ -153,7 +196,7 @@
         flex-direction: column;
     }
 
-    .footer-brand-info-col h4 {
+    h4 {
         font-size: 3rem;
     }
 
@@ -166,4 +209,5 @@
         justify-content: center;
         gap: 1rem;
     }
+
 }
