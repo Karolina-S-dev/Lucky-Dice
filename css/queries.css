@@ -114,7 +114,7 @@
         margin-left: 2.5rem;
     }
 }
-/* dodac comment */
+/* solving a problem of gap disappearing in contact us section */
 @media only screen and (max-width: 450px) {
 
     .contact-us-row {
