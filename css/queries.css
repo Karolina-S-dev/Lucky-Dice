@@ -123,7 +123,7 @@
         font-size: 2rem;
     }
 }
-
+/* adjustment for footer */
 @media only screen and (max-width: 500px) {
 
     .footer-top {
