@@ -30,10 +30,6 @@ textarea {
 /* REUSABLE */
 /* --------------------------- */
 
-h4 {
-    font-size: 3.5rem;
-}
-
 section {
     padding: 7rem 3rem;
 }
@@ -60,6 +56,14 @@ h2::after {
     height: 3px;
     top: 6rem;
     left: calc(50% - 3rem);
+}
+
+h3 {
+    border-bottom: 2px solid #000;
+    width: 12rem;
+    font-size: 2rem;
+    color: #666699;
+    margin-bottom: 2rem;
 }
 
 /* BUTTONS */
@@ -174,7 +178,6 @@ nav ion-icon[name="reorder-three"] {
 
 .pricelist-cards-container {
     display: flex;
-    /*---DIV prop.*/
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100rem;
@@ -188,83 +191,9 @@ nav ion-icon[name="reorder-three"] {
     background-color: #F0D891;
     padding: 1rem;
     position: relative;
-    /*---DIV prop.*/
     margin: 0 auto 0 auto;
     flex: 1 0 calc(35% - 2.5rem);
 }
-
-.pricelist-card-premium-features {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 83rem;
-    margin-bottom: 2rem;
-}
-
-.pricelist-card:last-child {
-    margin-bottom: 0;
-}
-
-.pricelist-card h3 {
-    border-bottom: 2px solid #000;
-    width: 12rem;
-    font-size: 2rem;
-    color: #666699;
-    margin-bottom: 2rem;
-}
-
-.card-col {
-    display: flex;
-    flex-direction: column;
-}
-
-/* POP-UP-WINDOW*/
-
-.pop-up-window {
-    position: relative;
-    cursor: pointer;
-    width: 10rem;
-}
-
-.tooltip {
-    visibility: hidden;
-    position: absolute;
-    display: block;
-    background-color: #c65e5a;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    width: 15rem;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -220%;
-    opacity: 0;
-}
-
-/* pseudoelement dziubek*/
-.tooltip::after {
-    content: "";
-    position: absolute;
-    border: 13px solid;
-    border-color: #c65e5a transparent transparent transparent;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-}
-
-.pop-up-window:hover .tooltip {
-    visibility: visible;
-    transition: 1s;
-    opacity: 1;
-    position: absolute;
-    left: 50%;
-    top: -220%;
-    transform: translateX(-50%);
-}
-
-/* --------------------------------- */
 
 .card-feature {
     display: flex;
@@ -274,6 +203,10 @@ nav ion-icon[name="reorder-three"] {
     margin-bottom: 2rem;
     align-items: center;
     gap: 2rem;
+}
+
+.card-feature ion-icon {
+    color: #000;
 }
 
 .card-item {
@@ -301,8 +234,67 @@ nav ion-icon[name="reorder-three"] {
     font-weight: 700;
 }
 
-.card-feature ion-icon {
-    color: #000;
+.pricelist-card-premium-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 83rem;
+    margin-bottom: 2rem;
+}
+
+.pricelist-card:last-child {
+    margin-bottom: 0;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* POP-UP-WINDOW (Free card)*/
+
+.pop-up-window {
+    position: relative;
+    cursor: pointer;
+    width: 10rem;
+}
+
+.pop-up-window:hover .tooltip {
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: -220%;
+    transform: translateX(-50%);
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    background-color: #c65e5a;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -220%;
+    opacity: 0;
+}
+
+/* pseudoelement triangle*/
+.tooltip::after {
+    content: "";
+    position: absolute;
+    border: 13px solid;
+    border-color: #c65e5a transparent transparent transparent;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
 }
 
 /* --------------------------- */
@@ -447,6 +439,12 @@ footer {
     font-size: 1.5rem;
     text-align: left;
     text-align: justify;
+    line-height: 2.2rem ;
+}
+
+h4 {
+    font-size: 3.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .footer-menu-contact-row {
@@ -462,13 +460,18 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-   }
+    text-align: left;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
 
 .footer-contact-col {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-  }
+}
 
 .footer-links-col a,
 .footer-contact-col a {
